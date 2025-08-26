@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2F6BB5E-66C6-4F54-9568-307ECCA82D35}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ASG_D</RootNamespace>
+    <AssemblyName>ASG D</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Technician %28Khor You Qi%29\CHANGEP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\CHANGEP.designer.cs">
+      <DependentUpon>CHANGEP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\se.cs" />
+    <Compile Include="Code\service.cs" />
+    <Compile Include="Code\se_user.cs" />
+    <Compile Include="Technician %28Khor You Qi%29\COMPLETED_N.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\COMPLETED_N.designer.cs">
+      <DependentUpon>COMPLETED_N.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\COMPLETED_U.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\COMPLETED_U.designer.cs">
+      <DependentUpon>COMPLETED_U.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer %28Angeline Chooi Weng Yan%29\FormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer %28Angeline Chooi Weng Yan%29\FormView.designer.cs">
+      <DependentUpon>FormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="Customer %28Angeline Chooi Weng Yan%29\FormChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer %28Angeline Chooi Weng Yan%29\FormChange.designer.cs">
+      <DependentUpon>FormChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer %28Angeline Chooi Weng Yan%29\FormSettingCP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer %28Angeline Chooi Weng Yan%29\FormSettingCP.designer.cs">
+      <DependentUpon>FormSettingCP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer %28Angeline Chooi Weng Yan%29\FormSettingPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer %28Angeline Chooi Weng Yan%29\FormSettingPI.designer.cs">
+      <DependentUpon>FormSettingPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receptionist %28Ko Zhi Shuen%29\frmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptionist %28Ko Zhi Shuen%29\frmPayment.designer.cs">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receptionist %28Ko Zhi Shuen%29\frmPersonal_Information_EK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptionist %28Ko Zhi Shuen%29\frmPersonal_Information_EK.designer.cs">
+      <DependentUpon>frmPersonal_Information_EK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin %28Woon Yan Qi Vivian%29\frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin %28Woon Yan Qi Vivian%29\frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin %28Woon Yan Qi Vivian%29\frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin %28Woon Yan Qi Vivian%29\frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin %28Woon Yan Qi Vivian%29\frmReportDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin %28Woon Yan Qi Vivian%29\frmReportDetails.Designer.cs">
+      <DependentUpon>frmReportDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin %28Woon Yan Qi Vivian%29\frmResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin %28Woon Yan Qi Vivian%29\frmResetPassword.Designer.cs">
+      <DependentUpon>frmResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin %28Woon Yan Qi Vivian%29\frmPersonalInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin %28Woon Yan Qi Vivian%29\frmPersonalInformation.Designer.cs">
+      <DependentUpon>frmPersonalInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receptionist %28Ko Zhi Shuen%29\frmService2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptionist %28Ko Zhi Shuen%29\frmService2.designer.cs">
+      <DependentUpon>frmService2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receptionist %28Ko Zhi Shuen%29\frmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptionist %28Ko Zhi Shuen%29\frmSignUp.designer.cs">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\NEWP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\NEWP.designer.cs">
+      <DependentUpon>NEWP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\PENDING_N.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\PENDING_N.designer.cs">
+      <DependentUpon>PENDING_N.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\PENDING_U.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\PENDING_U.designer.cs">
+      <DependentUpon>PENDING_U.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\ViewPic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\ViewPic.Designer.cs">
+      <DependentUpon>ViewPic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\PROCESSING_N.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\PROCESSING_N.designer.cs">
+      <DependentUpon>PROCESSING_N.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\PROCESSING_U.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\PROCESSING_U.designer.cs">
+      <DependentUpon>PROCESSING_U.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receptionist.cs" />
+    <Compile Include="receptionist_EK.cs" />
+    <Compile Include="Technician %28Khor You Qi%29\SETTINGPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician %28Khor You Qi%29\SETTINGPI.designer.cs">
+      <DependentUpon>SETTINGPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician.cs" />
+    <Compile Include="TInfo_Tracy.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="Technician %28Khor You Qi%29\CHANGEP.resx">
+      <DependentUpon>CHANGEP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician %28Khor You Qi%29\COMPLETED_N.resx">
+      <DependentUpon>COMPLETED_N.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician %28Khor You Qi%29\COMPLETED_U.resx">
+      <DependentUpon>COMPLETED_U.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer %28Angeline Chooi Weng Yan%29\FormChange.resx">
+      <DependentUpon>FormChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer %28Angeline Chooi Weng Yan%29\FormSettingCP.resx">
+      <DependentUpon>FormSettingCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer %28Angeline Chooi Weng Yan%29\FormSettingPI.resx">
+      <DependentUpon>FormSettingPI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer %28Angeline Chooi Weng Yan%29\FormView.resx">
+      <DependentUpon>FormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptionist %28Ko Zhi Shuen%29\frmPayment.resx">
+      <DependentUpon>frmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptionist %28Ko Zhi Shuen%29\frmPersonal_Information_EK.resx">
+      <DependentUpon>frmPersonal_Information_EK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin %28Woon Yan Qi Vivian%29\frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin %28Woon Yan Qi Vivian%29\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin %28Woon Yan Qi Vivian%29\frmReportDetails.resx">
+      <DependentUpon>frmReportDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin %28Woon Yan Qi Vivian%29\frmResetPassword.resx">
+      <DependentUpon>frmResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin %28Woon Yan Qi Vivian%29\frmPersonalInformation.resx">
+      <DependentUpon>frmPersonalInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptionist %28Ko Zhi Shuen%29\frmService2.resx">
+      <DependentUpon>frmService2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptionist %28Ko Zhi Shuen%29\frmSignUp.resx">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician %28Khor You Qi%29\NEWP.resx">
+      <DependentUpon>NEWP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician %28Khor You Qi%29\PENDING_N.resx">
+      <DependentUpon>PENDING_N.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician %28Khor You Qi%29\PENDING_U.resx">
+      <DependentUpon>PENDING_U.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician %28Khor You Qi%29\ViewPic.resx">
+      <DependentUpon>ViewPic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician %28Khor You Qi%29\PROCESSING_N.resx">
+      <DependentUpon>PROCESSING_N.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician %28Khor You Qi%29\PROCESSING_U.resx">
+      <DependentUpon>PROCESSING_U.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Technician %28Khor You Qi%29\SETTINGPI.resx">
+      <DependentUpon>SETTINGPI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userprofilepic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userprofilepic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_5305.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="myDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="myDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>myDB.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\change-password-icon-15.jpg" />
+    <None Include="Resources\change-password-icon-151.jpg" />
+    <None Include="Resources\view-removebg-preview.png" />
+    <None Include="Resources\append_service-removebg-preview.png" />
+    <None Include="Resources\companylogo-removebg-preview.png" />
+    <None Include="Resources\istockphoto-1209654046-170667a-removebg-preview.png" />
+    <None Include="Resources\linear-personal-profile-icon-human-resources-outline-collection-thin-line-isolated-white-background-trendy-illustration-140059801-removebg-preview.png" />
+    <None Include="Resources\logouttt-removebg-preview.png" />
+    <None Include="Resources\newlogo.png" />
+    <None Include="Resources\newlogo1.png" />
+    <None Include="Resources\setting-removebg-preview.png" />
+    <None Include="Resources\completed1.png" />
+    <None Include="Resources\processing1.png" />
+    <None Include="Resources\pending1.png" />
+    <None Include="Resources\Logo.jpeg" />
+    <None Include="Resources\Logout.png" />
+    <None Include="Resources\Sign Up.png" />
+    <None Include="Resources\pay.jpg" />
+    <None Include="Resources\Update Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
